@@ -1,4 +1,6 @@
 import React from "react";
+import Statistics from "./Statistics";
+import Activity from "./Activity";
 
 function RightSidebar() {
   return (
@@ -110,23 +112,21 @@ function RightSidebar() {
                 Basic Plan
               </p>
             </div>
-            <div className="text-gray-500 text-lg">⋁</div>
+            <div className="text-gray-500 text-lg">
+              <img
+                src="./image (29).png"
+                alt="i4"
+                style={{
+                  width: "14px",
+                  height: "8px",
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>
-      <div className="flex items-center space-x-3 lg:space-x-4">
-        <div></div>
-      </div>
-      Static Component
-      <div>
-        <h3 className="text-lg lg:text-xl font-semibold">Statistics</h3>
-        {/* Static content */}
-      </div>
-      {/* Activity Feed */}
-      <div>
-        <h3 className="text-lg lg:text-xl font-semibold">Activity</h3>
-        {/* Activity feed content */}
-      </div>
+      <Statistics />
+      <Activity />
     </div>
   );
 }
