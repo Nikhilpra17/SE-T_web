@@ -52,27 +52,21 @@ const planningTopics = [
 ];
 
 function Planning() {
-  const currentDate = new Date().toLocaleDateString();
-
   return (
-    <div className="p-4 bg-gray-200 rounded-lg">
-      {/* Header with Planning, View All, and Date */}
+    <div className="p-4  rounded-lg">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 space-y-2 md:space-y-0">
-        <h3 className="text-xl font-semibold">Planning</h3>
-        <div className="flex flex-col md:flex-row md:items-center md:space-x-4 space-y-2 md:space-y-0">
-          <button className="text-blue-500 hover:text-blue-700">
-            View All
-          </button>
-          <span className="text-gray-600">{currentDate}</span>
+        <h3 className="text-2xl font-bold">Planning</h3>
+        <div className="flex flex-col text-[#369FFF] md:flex-row md:items-center md:space-x-80 space-y-2 md:space-y-0">
+          <button className=" hover:text-blue-700">View All</button>
+          <span className="text-[#369FFF] pr-10">20 March 2020</span>
         </div>
       </div>
 
-      {/* Planning Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
         {planningTopics.map((topic, index) => (
           <div
             key={index}
-            className="w-[300px] h-[80px] bg-white shadow-md relative flex items-center justify-between p-4"
+            className="w-[300px] h-[80px] bg-white shadow-md relative flex items-center justify-between p-4 mb-6"
             style={{
               backgroundColor: "#F7F7F7",
               borderRadius: "16px",
@@ -104,7 +98,6 @@ function Planning() {
                   top: "722px",
                   left: "316px",
                   gap: "0px",
-                  // opacity: 0,
                 }}
               />
             </div>
@@ -116,8 +109,7 @@ function Planning() {
                   width: "180px",
                   height: "16px",
                   gap: "0px",
-                  // opacity: 0,
-                  // fontFamily: "Manrope",
+
                   fontSize: "12px",
                   fontWeight: 600,
                   lineHeight: "16.39px",
@@ -132,8 +124,7 @@ function Planning() {
                   width: "125px",
                   height: "16px",
                   gap: "0px",
-                  // opacity: 0,
-                  // fontFamily: "Manrope",
+
                   fontSize: "12px",
                   fontWeight: 400,
                   lineHeight: "16.39px",

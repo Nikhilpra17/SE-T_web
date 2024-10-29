@@ -3,7 +3,6 @@ import React from "react";
 function Sidebar() {
   return (
     <div className="flex flex-col items-center h-screen px-4 py-6 lg:py-8 space-y-6 lg:space-y-8 bg-white">
-      {/* Logo */}
       <div
         className="flex items-center mb-4 lg:mb-8"
         style={{
@@ -33,7 +32,6 @@ function Sidebar() {
         </span>
       </div>
 
-      {/* Navigation */}
       <nav className="flex flex-col items-center space-y-4 lg:space-y-6 text-gray-700">
         {["overview", "course", "resource", "message", "setting"].map(
           (item) => (
@@ -83,7 +81,6 @@ function Sidebar() {
         )}
       </nav>
 
-      {/* Profile Image */}
       <div
         className="mt-12 lg:mt-16 mb-4 lg:mb-8"
         style={{
@@ -97,14 +94,13 @@ function Sidebar() {
           style={{
             maxWidth: "157.2px",
             maxHeight: "190.46px",
+            marginTop: "92px",
           }}
         />
       </div>
 
-      {/* Spacer for flexible height distribution */}
       <div className="flex-grow"></div>
 
-      {/* Upgrade Plan Section */}
       <div
         className="w-full max-w-xs border border-[#ebf5ff] bg-[#b0d0ee] p-4 rounded-lg"
         style={{ minHeight: "106px" }}

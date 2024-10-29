@@ -4,42 +4,32 @@ import Activity from "./Activity";
 
 function RightSidebar() {
   return (
-    <div className="flex flex-col p-4 lg:p-8 space-y-4 lg:space-y-6">
-      {/* Notification Tool */}
-      {/* User Profile */}
+    <div className="flex flex-col p-2 lg:p-4 space-y-4 lg:space-y-6 bg-white mt-4">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 space-y-2 md:space-y-0">
-        {/* Heading */}
-        <div>
+        <div className="relative w-10 h-10">
           <img
             src="/image (27).png"
-            alt="User"
-            className="rounded w-10 h-10 lg:w-12 lg:h-12"
+            alt="Notification Bell"
+            className="w-full h-full"
             style={{
               width: "25px",
               height: "26px",
-              top: "49px",
-              left: "1012px",
-              gap: "0px",
-              opacity: "0px",
             }}
           />
+
           <div
-            className="position: absolute;"
+            className="absolute bg-red-500 rounded-full"
             style={{
               width: "10px",
               height: "10px",
-              left: "15px",
-              gap: "0px",
-              opacity: "0px",
+              top: "0px",
+              right: "15px",
+              border: "2px solid white",
             }}
-          >
-            🔴
-          </div>
+          ></div>
         </div>
 
-        {/* Right-side container for View All and Search */}
         <div className="flex flex-col md:flex-row md:items-center md:space-x-4 space-y-2 md:space-y-0">
-          {/* View All */}
           <div
             className=" bg-white shadow-md relative flex items-center justify-between"
             style={{
@@ -60,7 +50,6 @@ function RightSidebar() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                // backgroundColor: ,
               }}
             >
               <img
@@ -73,7 +62,6 @@ function RightSidebar() {
                   top: "722px",
                   left: "316px",
                   gap: "0px",
-                  // opacity: 0,
                 }}
               />
             </div>
@@ -85,8 +73,7 @@ function RightSidebar() {
                   width: "180px",
                   height: "16px",
                   gap: "0px",
-                  // opacity: 0,
-                  // fontFamily: "Manrope",
+
                   fontSize: "12px",
                   fontWeight: 600,
                   lineHeight: "16.39px",
@@ -101,18 +88,18 @@ function RightSidebar() {
                   width: "125px",
                   height: "16px",
                   gap: "0px",
-                  // opacity: 0,
-                  // fontFamily: "Manrope",
+
                   fontSize: "12px",
                   fontWeight: 400,
                   lineHeight: "16.39px",
                   textAlign: "left",
+                  color: "#369FFF",
                 }}
               >
                 Basic Plan
               </p>
             </div>
-            <div className="text-gray-500 text-lg">
+            <div className="text-gray-500 text-lg mr-3">
               <img
                 src="./image (29).png"
                 alt="i4"
